@@ -26,3 +26,5 @@ C:\Projets\MyApiTest\WebUI\obj\Debug\net5.0\WebUI.dll
 C:\Projets\MyApiTest\WebUI\obj\Debug\net5.0\ref\WebUI.dll
 C:\Projets\MyApiTest\WebUI\obj\Debug\net5.0\WebUI.pdb
 C:\Projets\MyApiTest\WebUI\obj\Debug\net5.0\WebUI.genruntimeconfig.cache
+C:\Projets\MyApiTest\WebUI\bin\Debug\net5.0\Domain.dll
+C:\Projets\MyApiTest\WebUI\bin\Debug\net5.0\Domain.pdb
