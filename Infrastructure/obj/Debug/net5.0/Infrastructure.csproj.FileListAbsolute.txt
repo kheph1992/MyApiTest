@@ -10,3 +10,9 @@ C:\Projets\MyApiTest\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CoreC
 C:\Projets\MyApiTest\Infrastructure\obj\Debug\net5.0\Infrastructure.dll
 C:\Projets\MyApiTest\Infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
 C:\Projets\MyApiTest\Infrastructure\obj\Debug\net5.0\Infrastructure.pdb
+C:\Projets\MyApiTest\Infrastructure\bin\Debug\net5.0\Infrastructure.runtimeconfig.json
+C:\Projets\MyApiTest\Infrastructure\bin\Debug\net5.0\Infrastructure.runtimeconfig.dev.json
+C:\Projets\MyApiTest\Infrastructure\bin\Debug\net5.0\Domain.dll
+C:\Projets\MyApiTest\Infrastructure\bin\Debug\net5.0\Domain.pdb
+C:\Projets\MyApiTest\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CopyComplete
+C:\Projets\MyApiTest\Infrastructure\obj\Debug\net5.0\Infrastructure.genruntimeconfig.cache

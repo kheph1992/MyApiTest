@@ -1,6 +1,8 @@
 ﻿using Domain.Entities;
+using Infrastructure.Persistance;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,57 +12,48 @@ namespace WebUI.Features.Cars
 {
     [Route("api/car")]
     [ApiController]
-    public class CarController : ControllerBase
+    public class CarController : ControllersBaseClass
     {
-        [HttpGet]
-        public ActionResult<List<Car>> GetCars()
+        public CarController(ApplicationDbContext db):base(db)
         {
-            var cars = new List<Car>();
-            var car1 = new Car
-            {
-                TeamName = "Team A",
-                Speed = 100,
-                MalfunctionChance = 0.2
-            };
-            var car2 = new Car
-            {
-                TeamName = "Team B",
-                Speed = 90,
-                MalfunctionChance = 0.15
-            };
-            cars.Add(car1);
-            cars.Add(car2);
 
+        }
+
+        [HttpGet]
+        public async Task <ActionResult<List<Car>>> GetCars()
+        {
+            var cars = await context.Cars.ToListAsync();
+            if (cars.Count<=0)
+            {
+                return NotFound("Database doesn't contain data");
+            }
             return Ok(cars);
         }
 
         [HttpGet]
         [Route("{id}")]
-        public ActionResult<Car> GetCarById(int id)
+        public async Task<ActionResult<Car>> GetCarById(int id)
         {
-            var cars = new List<Car>();
-            var car1 = new Car
+            var car1 = await context.Cars.FirstOrDefaultAsync(e => e.Id == id);
+            if (car1==null)
             {
-                TeamName = "Team A",
-                Speed = 100,
-                MalfunctionChance = 0.2
-            };
-            var car2 = new Car
-            {
-                TeamName = "Team B",
-                Speed = 90,
-                MalfunctionChance = 0.15
-            };
-            cars.Add(car1);
-            cars.Add(car2);
-
+                return NotFound(string.Format("Car with Id {0} doesn't exist",id));
+            }
             return Ok(car1);
         }
         
         [HttpPost]
-        public ActionResult<Car> GetCarById(Car car)
+        public async Task<ActionResult<Car>> GetCarById(Car car)
         {
-
+            try
+            {
+                await context.Cars.AddAsync(car);
+                await context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Couldn't save the car you entered because {ex.Message}");
+            }
             return Created(Url.ActionLink("GetCarById","Car",car.Id),car);
         }
 
