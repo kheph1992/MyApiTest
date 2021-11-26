@@ -1,0 +1,13 @@
+C:\Projets\MyApiTest\WebUI\obj\Release\net5.0\PubTmp\Out\WebUI.exe
+C:\Projets\MyApiTest\WebUI\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
+C:\Projets\MyApiTest\WebUI\obj\Release\net5.0\PubTmp\Out\appsettings.json
+C:\Projets\MyApiTest\WebUI\obj\Release\net5.0\PubTmp\Out\WebUI.dll
+C:\Projets\MyApiTest\WebUI\obj\Release\net5.0\PubTmp\Out\WebUI.deps.json
+C:\Projets\MyApiTest\WebUI\obj\Release\net5.0\PubTmp\Out\WebUI.runtimeconfig.json
+C:\Projets\MyApiTest\WebUI\obj\Release\net5.0\PubTmp\Out\WebUI.pdb
+C:\Projets\MyApiTest\WebUI\obj\Release\net5.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Projets\MyApiTest\WebUI\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Projets\MyApiTest\WebUI\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Projets\MyApiTest\WebUI\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Projets\MyApiTest\WebUI\obj\Release\net5.0\PubTmp\Out\Domain.dll
+C:\Projets\MyApiTest\WebUI\obj\Release\net5.0\PubTmp\Out\Domain.pdb

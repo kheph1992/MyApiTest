@@ -34,5 +34,35 @@ namespace WebUI.Features.Cars
             return Ok(cars);
         }
 
+        [HttpGet]
+        [Route("{id}")]
+        public ActionResult<Car> GetCarById(int id)
+        {
+            var cars = new List<Car>();
+            var car1 = new Car
+            {
+                TeamName = "Team A",
+                Speed = 100,
+                MalfunctionChance = 0.2
+            };
+            var car2 = new Car
+            {
+                TeamName = "Team B",
+                Speed = 90,
+                MalfunctionChance = 0.15
+            };
+            cars.Add(car1);
+            cars.Add(car2);
+
+            return Ok(car1);
+        }
+        
+        [HttpPost]
+        public ActionResult<Car> GetCarById(Car car)
+        {
+
+            return Created(Url.ActionLink("GetCarById","Car",car.Id),car);
+        }
+
     }
 }
