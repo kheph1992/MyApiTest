@@ -1,0 +1,12 @@
+C:\Projets\MyApiTest\Infrastructure\bin\Debug\net5.0\Infrastructure.deps.json
+C:\Projets\MyApiTest\Infrastructure\bin\Debug\net5.0\Infrastructure.dll
+C:\Projets\MyApiTest\Infrastructure\bin\Debug\net5.0\ref\Infrastructure.dll
+C:\Projets\MyApiTest\Infrastructure\bin\Debug\net5.0\Infrastructure.pdb
+C:\Projets\MyApiTest\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Projets\MyApiTest\Infrastructure\obj\Debug\net5.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projets\MyApiTest\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Projets\MyApiTest\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfo.cs
+C:\Projets\MyApiTest\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projets\MyApiTest\Infrastructure\obj\Debug\net5.0\Infrastructure.dll
+C:\Projets\MyApiTest\Infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
+C:\Projets\MyApiTest\Infrastructure\obj\Debug\net5.0\Infrastructure.pdb
